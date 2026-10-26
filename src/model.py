@@ -92,8 +92,8 @@ class LinearScoreModel:
         # every out-of-block prediction against the block, biasing all the
         # blocked protocols several accuracy points BELOW chance for reasons
         # that have nothing to do with leakage.  Thresholding the pure score
-        # at zero removes that confound and matches the brief's
-        # "thresholded linear score".
+        # at zero removes that confound and gives a plain
+        # thresholded linear score.
         self.bias = 0.0
         return self
 
